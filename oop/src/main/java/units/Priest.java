@@ -1,10 +1,10 @@
 package units;
 
 public class Priest extends Spirit {
-    private Integer to_teleport(){
+    private int to_teleport(){
         return 0;
     }
-    private Integer to_deffens(){
+    private int to_deffens(){
         return 0;
     }
 }
