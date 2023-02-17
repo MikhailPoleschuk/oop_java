@@ -9,6 +9,7 @@ public class main {
         rustic.GetDamage();
         rustic.GetInfo();
         rustic1.GetInfo();
+        rustic.GetHelth();
 
         Robber robber=new Robber();
         Spearman spearman=new Spearman();
