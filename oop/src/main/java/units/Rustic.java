@@ -3,19 +3,23 @@ package units;
 public class Rustic extends Person {
     static int id_rustic;
     int id;
-    public Rustic(){
+
+    public Rustic(String name) {
+        super(name);
         id_rustic++;
-        this.id =id_rustic;
-        this.helth=100;
-        this.exp=1;
-        this.speed=5;
+        this.id = id_rustic;
+    }
+
+    @Override
+    public void Step() {
 
     }
-    public void GetInfo(){
-        System.out.println("rustic "+id+" helth="+this.helth+" exp="+ this.exp+" speed="+ this.speed);
-    }
-    public void GetDamage(){
-        this.helth-=10;
+
+    @Override
+    public String GetInfo() {
+
+        String str = name + String.valueOf(id) + " " + " Я крестьянин!";
+        return str;
     }
 }
 

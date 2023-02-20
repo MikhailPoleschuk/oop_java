@@ -1,25 +1,23 @@
 package units;
 
 public class Cbm extends Arta {
-    static int id_cbm;
+    static int id_Cbm;
     int id;
 
-    public Cbm() {
-        id_cbm++;
-        this.id = id_cbm;
-        this.helth = 100;
-        this.exp = 1;
-        this.speed = 5;
-        this.dem = 20;
-        this.deff = 10;
-        this.distans = 20;
-        this.cartridges = 3;
-
+    public Cbm(String name) {
+        super(name);
+        id_Cbm++;
+        this.id = id_Cbm;
     }
 
-    public void GetInfo() {
-        System.out.println("cbm " + id + " helth=" + this.helth + " exp=" + this.exp + " speed=" + this.speed +
-                " dem=" + dem + " deff=" + deff + "distans=" + distans + " cartridges=" + cartridges);
+
+    @Override
+    public void Step() {
     }
 
+    @Override
+    public String GetInfo() {
+        String str = name + String.valueOf(id) + " " + " Я арбалетчик!";
+        return str;
+    }
 }

@@ -1,10 +1,18 @@
 package units;
 
-public class Person {
-    protected int helth;
-    protected int exp;
-    protected int speed;
-    public void GetHelth(){
-        System.out.println("helth= "+ this.helth);
+public abstract class  Person implements GameInterface{
+    String name;
+    public Person(String name) {
+        this.name = name;
     }
+
+    public void Step() {   }
+
+
+    public String GetInfo() {
+        String str = "такого человека быть не должно";
+        return str;
+    }
+
+
 }
