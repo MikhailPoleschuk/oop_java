@@ -6,6 +6,7 @@ public class Spearman extends Pehota {
 
     public Spearman(String name) {
         super(name);
+        id_Pehota++;
         this.id = id;
     }
 
